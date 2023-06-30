@@ -9,6 +9,25 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.4"
-  }
-}
+    "express": "^4.16.4",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {},
+    "respository": {
+      "type": "git",
+      "url": "git+https://github.com/jheeebert/expressjs-note-taker.git"
+    },
+    "keywords": [
+      "expressjs",
+      "note-taker",
+      "notes",
+      "express",
+      "node"
+    ],
+      "bugs": {
+        "url": "https://github.com/jheeebert/expressjs-note-taker/issues"
+      },
+      "homepage": 
+      "https://github.com/jheeebert/expressjs-note-taker#readme"
+      }
+    
