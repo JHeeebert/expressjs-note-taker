@@ -1,28 +1,48 @@
 // Declare router variable and store variable express.Router() and db store 
 // Require express and router
-const router = require("express").Router();
-const store = require("../db/db.json");
-// request existing notes from the db.json file
-router.get("/notes", function (_req, res) {
-    // get notes from the db.json file
-    store.getNotes()
-        // send notes if there are no errors
-        .then(notes => res.json(notes))
-        // send err if there is an error
-        .catch(err => res.status(500).json(err));
+const path = require("path");
+const express = require("express");
+const router = express.Router();
+const fs = require("fs");
+ 
+// Set up Path to the db file
+const dbPath = path.join(__dirname, "../db/db.json");
+
+// GET route for getting all notes
+ router.get("/api/notes", (req, res) => {
+    fs.readFile(dbPath, "utf8", (err, data) => {
+        if (err) throw err;
+        res.json(JSON.parse(data));
+    });
 });
-// posting note function route
-router.post("/notes", (req, res) => {
-    console.log(req.body);
-    store.addNote(req.body)
-        .then(note => res.json(note))
-        .catch(err => res.status(500).json(err))
+
+// Save note to db.json
+router.post("/api/notes", (req, res) => {
+    fs.readFile(dbPath, "utf8", (err, data) => {
+        if (err) throw err;
+        const notes = JSON.parse(data);
+        const newNote = req.body;
+        newNote.id = notes.length.toString();
+        notes.push(newNote);
+        fs.writeFile(dbPath, JSON.stringify(notes), (err) => {
+            if (err) throw err;
+            res.json(newNote);
+        });
+    });
 });
-// delete note function route
-router.delete("/notes/:id", (req, res) => {
-    store.removeNote(req.params.id)
-        .then(() => res.json({ ok: true }))
-        .catch(err => res.status(500).json(err))
+
+// Delete note from db.json
+router.delete("/api/notes/:id", (req, res) => {
+    fs.readFile(dbPath, "utf8", (err, data) => {
+        if (err) throw err;
+        const notes = JSON.parse(data);
+        const noteID = req.params.id;
+        notes.splice(noteID, 1);
+        fs.writeFile(dbPath, JSON.stringify(notes), (err) => {
+            if (err) throw err;
+            res.json(notes);
+        });
+    });
 });
-// export router
+
 module.exports = router;
