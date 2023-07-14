@@ -1,7 +1,7 @@
 // Declare router variable and store variable express.Router() and db store 
 // Require express and router
 const router = require("express").Router();
-const store = require("../db/store");
+const store = require("../db/db.json");
 // request existing notes from the db.json file
 router.get("/notes", function (_req, res) {
     // get notes from the db.json file
