@@ -1,7 +1,9 @@
 # expressjs-note-taker
   ## Description 📈
-  a nodeJS app that allows you to build a professional README.md 
-  ## Table of Contents 📓
+AS A small business owner
+I WANT to be able to write and save notes
+SO THAT I can organize my thoughts and keep track of tasks I need to complete  
+## Table of Contents 📓
   1️⃣ [Installation](#installation) 💻 <br>
   2️⃣ [Usage](#usage) 📎 <br>
   3️⃣ [License](#license) 📂 <br>
@@ -24,14 +26,14 @@
   [![Node.js](https://badgen.net/badge/icon/nodejs?icon=nodejs&label)](https://nodejs.org/) <br>
   ## Contributing 🔍
   [Contributors Covenant](https://www.contributor-covenant.org/) <br>
-  [![Contributors over time](https://contributor-graph-api.apiseven.com/contributors-svg?chart=contributorOverTime&repo=Jheeebert/readme-generator)](https://www.apiseven.com/en/contributor-graph?chart=contributorOverTime&repo=Jheeebert/readme-generator)
+  [![Contributors over time](https://contributor-graph-api.apiseven.com/contributors-svg?chart=contributorOverTime&repo=Jheeebert/expressjs-note-taker)](https://www.apiseven.com/en/contributor-graph?chart=contributorOverTime&repo=Jheeebert/expressjs-note-taker)
   <br>
   add branch and wait for review
   
   ## Tests ⌛
-  [![GitHub commits](https://badgen.net/github/commits/Jheeebert/readme-generator)](https://GitHub.com/Jheeebert/readme-generator/commit/)
-  [![GitHub latest commit](https://badgen.net/github/last-commit/Jheeebert/readme-generator)](https://GitHub.com/Jheeebert/readme-generator/commit/)
-  [![GitHub forks](https://img.shields.io/github/forks/Jheeebert/readme-generator.svg?style=social&label=Fork&maxAge=2592000)](https://GitHub.com/Jheeebert/readme-generator/network/)
+  [![GitHub commits](https://badgen.net/github/commits/Jheeebert/expressjs-note-taker)](https://GitHub.com/Jheeebert/expressjs-note-taker/commit/)
+  [![GitHub latest commit](https://badgen.net/github/last-commit/Jheeebert/expressjs-note-taker)](https://GitHub.com/Jheeebert/expressjs-note-taker/commit/)
+  [![GitHub forks](https://img.shields.io/github/forks/Jheeebert/expressjs-note-taker.svg?style=social&label=Fork&maxAge=2592000)](https://GitHub.com/Jheeebert/expressjs-note-taker/network/)
   <br>
 
   ## Preview
