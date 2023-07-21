@@ -9,7 +9,7 @@ const fs = require("fs");
 const dbPath = path.join(__dirname, "../db/db.json");
 
 // GET route for getting all notes
- router.get("/api/notes", (req, res) => {
+ router.get("/notes", (req, res) => {
     fs.readFile(dbPath, "utf8", (err, data) => {
         if (err) throw err;
         res.json(JSON.parse(data));
@@ -17,7 +17,7 @@ const dbPath = path.join(__dirname, "../db/db.json");
 });
 
 // Save note to db.json
-router.post("/api/notes", (req, res) => {
+router.post("/notes", (req, res) => {
     fs.readFile(dbPath, "utf8", (err, data) => {
         if (err) throw err;
         const notes = JSON.parse(data);
@@ -32,7 +32,7 @@ router.post("/api/notes", (req, res) => {
 });
 
 // Delete note from db.json
-router.delete("/api/notes/:id", (req, res) => {
+router.delete("/notes/:id", (req, res) => {
     fs.readFile(dbPath, "utf8", (err, data) => {
         if (err) throw err;
         const notes = JSON.parse(data);
