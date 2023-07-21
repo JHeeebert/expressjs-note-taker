@@ -36,8 +36,10 @@ SO THAT I can organize my thoughts and keep track of tasks I need to complete
   [![GitHub forks](https://img.shields.io/github/forks/Jheeebert/expressjs-note-taker.svg?style=social&label=Fork&maxAge=2592000)](https://GitHub.com/Jheeebert/expressjs-note-taker/network/)
   <br>
 
-  ## Preview
+  ## Demo
+  [expressJS note taker.webm"]
 Check out the deployed version here: (https://cryptic-taiga-24275-b54136b46265.herokuapp.com/)<br>
+https://drive.google.com/file/d/1VUdziIUNiEGYy0XSjp5t3nVfP2mtME2n/view
   ## Questions ☎️💻📱
   If you have any questions about the repo, open an issue or contact me directly at 📧 wdfuzz8823@gmail.com 📧. <br>
   You can find more of my work at 🔖 [Jheeebert](https://github.com/Jheeebert/) 🔖. 
